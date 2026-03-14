@@ -1,0 +1,10 @@
+[package]
+name = "forge-kernels"
+version = "0.1.0"
+edition = "2024"
+description = "CUDA kernels for Forge ML framework — sigmoid, silu, softplus, rms_norm"
+
+[dependencies]
+
+[build-dependencies]
+cudaforge = "0.1.2"

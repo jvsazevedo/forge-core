@@ -1,0 +1,19 @@
+[package]
+name = "forge-core"
+version = "0.1.0"
+edition = "2024"
+description = "Forge ML framework — Rust core with candle backend and C FFI"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+candle-core = { git = "https://github.com/huggingface/candle.git", features = ["cuda"] }
+candle-nn = { git = "https://github.com/huggingface/candle.git" }
+# TODO: switch to git dependency after pushing opaque handle support
+# furst-macro = { git = "https://github.com/fulecorafa/furst_sharp" }
+# furst-rt = { git = "https://github.com/fulecorafa/furst_sharp" }
+furst-macro = { path = "../../furst_sharp/furst-macro" }
+furst-rt = { path = "../../furst_sharp/furst-rt" }
+forge-kernels = { path = "../forge-kernels" }
+cudarc = "0.19"

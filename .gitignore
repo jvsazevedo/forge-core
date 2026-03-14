@@ -1,0 +1,48 @@
+# ─── Rust ────────────────────────────────────────────────────────────
+target/
+Cargo.lock
+*.rs.bk
+
+# ─── F# / .NET ──────────────────────────────────────────────────────
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+packages/
+*.nupkg
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# ─── CUDA build artifacts ───────────────────────────────────────────
+*.ptx
+*.cubin
+*.fatbin
+
+# ─── IDE / Editor ───────────────────────────────────────────────────
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# ─── OS ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── Logs / temp ────────────────────────────────────────────────────
+*.log
+*.tmp
+
+# ─── Shared libraries (build output) ────────────────────────────────
+*.so
+*.dylib
+*.dll

@@ -1,0 +1,9 @@
+[package]
+name = "forge-smoke"
+version = "0.1.0"
+edition = "2024"
+description = "Forge benchmark runner and smoke test visualizer"
+
+[dependencies]
+forge-core = { path = "../forge-core" }
+candle-core = { git = "https://github.com/huggingface/candle.git", features = ["cuda"] }

@@ -1,0 +1,10 @@
+[package]
+name = "mlp-poc"
+version = "0.1.0"
+edition = "2024"
+description = "Original MLP proof-of-concept using candle (kept as reference)"
+
+[dependencies]
+anyhow = "1.0"
+candle-core = { git = "https://github.com/huggingface/candle.git", features = ["cuda"] }
+candle-nn = { git = "https://github.com/huggingface/candle.git" }

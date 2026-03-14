@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "forge-core",
+    "forge-kernels",
+    "forge-smoke",
+    "examples/mlp-poc",
+]
+resolver = "2"
